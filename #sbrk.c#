@@ -1,0 +1,17 @@
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char ** argv){
+
+  intptr_t extend =300;
+  printf("%p\n",(long *)sbrk(0));
+  long * last_size = sbrk(extend);
+  printf("%-60phi\n", last_size);
+  printf("%p\n",(long *)sbrk(0));
+  printf("%p\n",(long *)sbrk(0));
+  
+  
+  
+  return 0;
+}

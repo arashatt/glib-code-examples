@@ -1,0 +1,16 @@
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "stack.h"
+int main(int argc, char ** argv){
+  struct stack st;
+  push(&st, 32);
+  push(&st, 32);
+  push(&st, 32);
+  printf("%d\n", pop(&st));
+  p
+  
+  
+  return 0;
+}
